@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .app-logo {
+            width: 200px;
+            height: 200px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Tour Planner Home</title>
+</head>
+<body>
+    <div class="container">
+        <img src="app_logo.jpg" alt="App Logo" class="app-logo">
+        <h1>Welcome to Tour Planner App!</h1>
+        <button id="viewAllToursButton" onclick="redirectToTourListing()">Go to the DashBoard</button>
+    </div>
+    <script>
+        function redirectToTourListing() {
+            window.location.href = "dashboard.html";
+            
+        }
+    </script>
+</body>
+</html>
